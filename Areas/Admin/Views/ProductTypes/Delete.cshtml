@@ -1,0 +1,17 @@
+﻿@model GraniteHouse.Models.ProductTypes
+
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+<form method="post" asp-action="Delete">
+    <div>
+        <label asp-for="Name"></label><br />
+        <input asp-for="Name" disabled />
+    </div>
+
+    <input type="submit" asp-route-id="@Model.Id" value="Delete" />
+    <a asp-action="Index">Back to list</a>
+</form>
