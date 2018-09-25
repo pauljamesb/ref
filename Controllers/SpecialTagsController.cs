@@ -23,6 +23,15 @@ namespace GraniteHouse.Areas.Admin.Controllers
                 return View(_db.SpecialTags.ToList());
             }
             
+            // GET Create Action Method
+            public IActionResult Create()
+            {
+                return View();
+            }
+            
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            
             
     }
 
