@@ -50,10 +50,14 @@ namespace GraniteHouse.Areas.Admin.Controllers
                 {
                     return NotFound();
                 }
-                if(ModelState.IsValid)
+                
+                var specialTag = await _db.SpecialTags.FindAsync(Id);
+                if(specialTag == null)
                 {
-                    _db.Update(specialTags);
+                    return NotFound();
                 }
+                
+                return View(specialTag);
                 
             }
             
