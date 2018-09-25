@@ -79,6 +79,14 @@ namespace GraniteHouse.Areas.Admin.Controllers
                 {
                     return NotFound();
                 }
+                
+                if(ModelState.IsValid)
+                {
+                    _db.Update(specialTags);
+                    await _db.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                
             }
             
             
