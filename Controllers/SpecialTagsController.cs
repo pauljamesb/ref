@@ -31,6 +31,10 @@ namespace GraniteHouse.Areas.Admin.Controllers
             
             [HttpPost]
             [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Create(SpecialTags specialTags)
+            {
+            
+            }
             
             
     }
