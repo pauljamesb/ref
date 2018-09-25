@@ -87,6 +87,8 @@ namespace GraniteHouse.Areas.Admin.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 
+                return View(specialTags);
+                
             }
             
             
