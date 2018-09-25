@@ -62,6 +62,26 @@ namespace GraniteHouse.Areas.Admin.Controllers
             }
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            // POST Edit Action Method
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public async Task<IActionResult> Edit(int id, SpecialTags specialTags)
+            {
+                if(!id == specialTags.Id)
+                {
+                    return NotFound();
+                }
+            }
+            
+            
     }
 
 }
