@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Granitehouse.Models 
 {
-    class TagTypes 
+    class SpecialTags 
     {
       public string Name { get; set; }
     }
