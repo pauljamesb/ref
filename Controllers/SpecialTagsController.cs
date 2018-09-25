@@ -6,4 +6,13 @@ using GraniteHouse.Data;
 using GraniteHouse.Models;
 using Microsoft.AspNetCore.Mvc;
 
+namespace GraniteHouse.Admin.Controllers
+{
+
+    public class SpecialTagsController : Controller
+    {
+    }
+
+}
+
 
