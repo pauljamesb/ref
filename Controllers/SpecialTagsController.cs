@@ -36,6 +36,7 @@ namespace GraniteHouse.Areas.Admin.Controllers
                 If(ModelState.IsValid)
                 {
                     _db.Add(specialTags);
+                    await _db.SaveChangesAsnc();
                 }
             }
             
