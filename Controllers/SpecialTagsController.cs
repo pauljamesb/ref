@@ -33,7 +33,10 @@ namespace GraniteHouse.Areas.Admin.Controllers
             [ValidateAntiForgeryToken]
             public async Task<IActionResult> Create(SpecialTags specialTags)
             {
-            
+                If(ModelState.IsValid)
+                {
+                    _db.Add(specialTags);
+                }
             }
             
             
