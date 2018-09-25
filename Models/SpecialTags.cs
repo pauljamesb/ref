@@ -8,6 +8,9 @@ namespace Granitehouse.Models
 {
     class SpecialTags 
     {
+      public string Id { get; set; }
+        
+      [Required]  
       public string Name { get; set; }
     }
 }
