@@ -6,7 +6,7 @@ using GraniteHouse.Data;
 using GraniteHouse.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GraniteHouse.Admin.Controllers
+namespace GraniteHouse.Areas.Admin.Controllers
 {
 
     [Area("Admin")]
@@ -17,6 +17,13 @@ namespace GraniteHouse.Admin.Controllers
             {
                 _db = db;
             }
+            
+            public IActionResult Index()
+            {
+                return View(_db.SpecialTags.ToList());
+            }
+            
+            
     }
 
 }
