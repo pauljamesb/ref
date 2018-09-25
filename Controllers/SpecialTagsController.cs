@@ -46,8 +46,13 @@ namespace GraniteHouse.Areas.Admin.Controllers
             // GET Action Method Edit
             public async Task<IActionResult> Edit(int? id)
             {
-                if(id == null)
+                if(id==null)
                 {
+                    return NotFound();
+                }
+                if(ModelState.IsValid)
+                {
+                    _db.Update(specialTags);
                 }
                 
             }
