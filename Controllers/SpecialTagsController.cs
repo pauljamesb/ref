@@ -37,7 +37,9 @@ namespace GraniteHouse.Areas.Admin.Controllers
                 {
                     _db.Add(specialTags);
                     await _db.SaveChangesAsnc();
+                    return RedirectToAction(Nameof(Index));
                 }
+                return View(specialTags);
             }
             
             
