@@ -46,6 +46,10 @@ namespace GraniteHouse.Areas.Admin.Controllers
             // GET Action Method Edit
             public async Task<IActionResult> Edit(int? id)
             {
+                if(id == null)
+                {
+                }
+                
             }
             
             
